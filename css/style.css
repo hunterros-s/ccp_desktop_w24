@@ -1,0 +1,11 @@
+/* Skip to main content CSS */
+.skip-to-main-link {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+.skip-to-main-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
