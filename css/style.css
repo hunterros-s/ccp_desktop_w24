@@ -8,4 +8,106 @@
     left: 50%;
     transform: translateX(-50%);
     opacity: 1;
-  }
+    z-index: 9999;
+    top: 1rem; /* Provide enough top padding for readability */
+    height: auto;
+    width: auto;
+    padding: 0.5rem 1rem; /* Consistent with common button/link padding */
+    background-color: #f0f0f0; /* Light background for better contrast */
+    border: 1px solid #ccc; /* Subtle border for emphasis */
+    border-radius: 4px; /* Slightly rounded corners for accessibility and aesthetics */
+    line-height: 1.5; /* Consistent line height for readability */
+}
+
+/* Navigation bar */
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center; /* Center horizontal items */
+    align-items: center; /* Center vertical items */
+    list-style: none; /* Remove default list styling */
+}
+nav ul li {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+}
+nav ul li a {    
+    display: inline-block;
+    width: 100%;
+
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+
+    /* Remove default link styling */
+    text-decoration: none;
+    color: #000;
+    
+    background-color: #eee;
+    /* Add cursor pointer for button-like behavior */
+    cursor: pointer;
+}
+nav ul li a.active {
+    background-color: #ff7272;
+    font-weight: bold;
+    border: 4px solid black;
+}
+
+/* Normal stuff */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    width: calc(100% - 10px);
+}
+
+.photo-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* remove reset */
+ul { 
+    list-style-type: disc; 
+    list-style-position: inside; 
+ }
+ ol { 
+    list-style-type: decimal; 
+    list-style-position: inside; 
+ }
+ ul ul, ol ul { 
+    list-style-type: circle; 
+    list-style-position: inside; 
+    margin-left: 15px; 
+ }
+ ol ol, ul ol { 
+    list-style-type: lower-latin; 
+    list-style-position: inside; 
+    margin-left: 15px; 
+ }
+
+ /* Media query to pause gifs */
+ @media (prefers-reduced-motion: reduce) {
+    img[src$=".gif"] {
+        animation-play-state: paused;
+    }
+}
