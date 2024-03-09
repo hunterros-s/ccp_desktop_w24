@@ -56,33 +56,48 @@ nav ul li a.active {
 
 /* Normal stuff */
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    color: #001c00;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: rgb(250, 249, 246);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     padding: 1rem;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.5rem;
 }
 
 main {
-    max-width: 900px;
     margin: auto;
-    width: calc(100% - 10px);
+    width: 100%;
 }
 
 .photo-gallery {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.panel {
+    padding: 80px 32px;
+    border-top: 1px solid #242424;
+}
+
+.panel > .main-image {
+    padding: 18px;
 }
 
 /* remove reset */
