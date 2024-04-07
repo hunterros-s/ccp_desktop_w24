@@ -140,7 +140,7 @@ img:hover {
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 @media (min-width:641px) {
-    .panel > .main-content {
+    .main-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -159,4 +159,24 @@ img:hover {
     .photo-gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1180px) {
+    .panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1600px;
+        align-items: center;
+    }
+    .p1, .p2 {
+        max-width: 700px;
+    }
+    main {
+        display: grid;
+        justify-content: center;
+    }
+}
+#time {
+    text-align: center;
 }
